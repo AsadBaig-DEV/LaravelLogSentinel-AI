@@ -1,0 +1,40 @@
+[2026-02-09 15:52:13] local.CRITICAL: Maximum execution time of 30 seconds exceeded 
+Stack trace:
+#0 at /var/www/html/app/Http/Controllers/ReportController.php:142
+#1 /var/www/html/public/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+--------------------------------------------------
+[2026-02-09 15:52:28] local.ERROR: Column not found: 1054 Unknown column 'user_id' in 'field list' 
+Stack trace:
+#0 at /var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:671
+#1 /var/www/html/public/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+--------------------------------------------------
+[2026-02-09 15:52:31] local.ERROR: Column not found: 1054 Unknown column 'user_id' in 'field list' 
+Stack trace:
+#0 at /var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:671
+#1 /var/www/html/public/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+--------------------------------------------------
+[2026-02-09 15:52:35] local.ERROR: Call to a member function getClientOriginalExtension() on null 
+Stack trace:
+#0 at /var/www/html/app/Http/Controllers/InsuranceController.php:89
+#1 /var/www/html/public/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+--------------------------------------------------
+[2026-02-09 15:52:37] local.ERROR: Column not found: 1054 Unknown column 'user_id' in 'field list' 
+Stack trace:
+#0 at /var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:671
+#1 /var/www/html/public/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+--------------------------------------------------
+[2026-02-09 15:52:42] local.ERROR: Call to a member function getClientOriginalExtension() on null 
+Stack trace:
+#0 at /var/www/html/app/Http/Controllers/InsuranceController.php:89
+#1 /var/www/html/public/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+--------------------------------------------------
+[2026-02-09 15:52:45] local.CRITICAL: Maximum execution time of 30 seconds exceeded 
+Stack trace:
+#0 at /var/www/html/app/Http/Controllers/ReportController.php:142
+#1 /var/www/html/public/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+--------------------------------------------------
+[2026-02-09 15:55:44] local.ERROR: Call to a member function getClientOriginalExtension() on null 
+Stack trace:
+#0 at /var/www/html/app/Http/Controllers/InsuranceController.php:89
+#1 /var/www/html/public/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+--------------------------------------------------
