@@ -31,7 +31,7 @@ class LogNotifier:
           "type": "section",
           "text": {
               "type": "mrkdwn",
-              "text": f"*💡 AI Analysis & Fix:*\n{ai_analysis}"
+              "text": f"*AI Analysis & Fix:*\n{ai_analysis}"
           }
         },
         {
