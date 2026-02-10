@@ -38,3 +38,13 @@ Stack trace:
 #0 at /var/www/html/app/Http/Controllers/InsuranceController.php:89
 #1 /var/www/html/public/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
 --------------------------------------------------
+[2026-02-09 17:59:03] local.ERROR: Column not found: 1054 Unknown column 'user_id' in 'field list' 
+Stack trace:
+#0 at /var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:671
+#1 /var/www/html/public/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+--------------------------------------------------
+[2026-02-09 18:09:08] local.ERROR: Column not found: 1054 Unknown column 'user_id' in 'field list' 
+Stack trace:
+#0 at /var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:671
+#1 /var/www/html/public/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+--------------------------------------------------

@@ -4,6 +4,8 @@ from datetime import datetime
 from pathlib import Path
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
+from services.ai_analyzer import AIAnalyzer
+from services.notifier import LogNotifier
 
 class LogHandler(FileSystemEventHandler):
   def __init__(self, log_dir):
@@ -26,7 +28,7 @@ class LogHandler(FileSystemEventHandler):
       self._process_new_entries(today_log)
 
   def _process_new_entries(self, file_path):
-    """Reads only the newly appended line form the log."""
+    """Reads only the newly appended line and trigger AI fixes and notification."""
     with open(file_path, 'r') as f:
       f.seek(self.last_position)
       new_data = f.read()
@@ -34,7 +36,13 @@ class LogHandler(FileSystemEventHandler):
 
       if new_data.strip():
         print(f"\n [New Log Entry] at {datetime.now().strftime('%H:%M:%S')}")
-        print(f"--- Content Start ---\n {new_data.strip()}\n--- Content End ---")
+        # print(f"--- Content Start ---\n {new_data.strip()}\n--- Content End ---")
+
+        analyzer = AIAnalyzer()
+        notifier = LogNotifier()
+
+        ai_analysis = analyzer.analyze_stack_trace(new_data)
+        notifier.send_slack_alert(new_data, ai_analysis)
 
 class LogWatcher:
   def __init__(self, directory_to_watch):
